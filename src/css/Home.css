@@ -1,0 +1,112 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 20px; /* 为容器增加内边距，避免内容太紧挨边缘 */
+    box-sizing: border-box; /* 使内边距不会影响总宽度 */
+}
+
+.left-section {
+    width: 60%;
+    text-align: left;
+    padding: 10px;
+    margin: 20px;
+}
+
+.right-section {
+    width: 40%;
+    margin: 20px;
+}
+
+.name {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.description {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.left-section-top-content {
+    padding-bottom: 20px;
+}
+
+.left-section-bottom-content {
+    margin-top: 15%;
+    padding-bottom: 20px;
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.socials a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.socials a img {
+    width: 60px;
+    height: 60px;
+    margin-right: 6px;
+    transition: transform 0.3s ease;
+}
+
+.socials a:hover {
+    color: #0073b1;
+}
+
+.socials a:hover img {
+    transform: scale(1.1);
+}
+
+.profile-pic {
+    width: 100%;         /* 图片自适应容器宽度 */
+    max-width: 480px;    /* 最大宽度 480px */
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .profile-pic {
+        width: 200px;    /* 当屏幕宽度小于 600px 时，图片宽度设置为 200px */
+    }
+}
