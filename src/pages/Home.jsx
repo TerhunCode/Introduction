@@ -3,6 +3,7 @@ import ProfilePic from '../assets/img/profile-pic.jpg'
 import Resume from '../assets/pdf/TeoJiaJun_Resume_Aus_C.pdf'
 import githubIcon from '../assets/img/github-sign.png'
 import linkedinIcon from '../assets/img/linkedin.png'
+import leetcodeIcon from '../assets/img/leetcode_icon.png'
 
 function Home() {
     return (
@@ -22,6 +23,9 @@ function Home() {
                         </a>
                         <a href="https://github.com/TerhunCode" target="_blank" rel="noopener noreferrer">
                             <img src={linkedinIcon} alt="GitHub" />
+                        </a>
+                        <a href="https://leetcode.com/u/terhuncode/" target="_blank" rel="noopener noreferrer">
+                            <img src={leetcodeIcon} alt="LeetCodeLeetCode" />
                         </a>
                     </div>
                 </div>
